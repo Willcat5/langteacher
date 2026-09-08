@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "langteacher",
+	"version": "${version}",
+	"name": "langteacher",
+	"description": "Sends repeated chat messages and runs a command on a timed loop.",
+	"authors": [
+		"Willf"
+	],
+	"license": "CC0-1.0",
+	"icon": "assets/langteacher/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"willits.langteacher.LangteacherClient"
+		],
+		"modmenu": [
+			"willits.langteacher.ModMenuCompat"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*",
+		"cloth-config": "*"
+	},
+	"suggests": {
+		"modmenu": "*"
+	}
+}
